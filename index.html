@@ -7,25 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans scroll-smooth">
 
     <!-- HEADER / NAVIGATION -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- LOGO IMAGE INSTALLED HERE -->
             <div class="flex items-center">
                 <img src="https://i.ibb.co.com/84mbJgGr/IMG-20240927-WA0002-removebg-preview.png" alt="Leong The Explore Logo" class="h-14 md:h-16 w-auto object-contain">
             </div>
             <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#fleets" class="hover:text-blue-600 transition">Our Fleets</a>
-                <a href="#routes" class="hover:text-blue-600 transition">Routes</a>
+                <a href="#itinerary" class="hover:text-blue-600 transition">Itinerary</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">Prices & Fleets</a>
             </nav>
             <a href="https://wa.me/628123456789" class="bg-blue-600 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition shadow-md">Book via WhatsApp</a>
         </div>
@@ -34,86 +33,164 @@
     <!-- HERO SECTION -->
     <section class="hero-bg h-[85vh] flex items-center justify-center text-center text-white px-4">
         <div class="max-w-3xl">
+            <span class="bg-yellow-500 text-slate-900 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-4 inline-block">Departure: Mon, Wed, & Sat</span>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Indonesia Doesn't Wait.<br>Neither Should You.</h1>
             <p class="text-lg md:text-xl mb-8 text-slate-200">Discover the untamed beauty of Komodo and Lombok with Leong The Explore. Luxury fleets, legendary routes, and unforgettable memories tailored for adventurers.</p>
-            <a href="#routes" class="bg-yellow-500 text-slate-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition transform hover:scale-105 inline-block shadow-lg">Explore Trips & Prices</a>
+            <a href="#itinerary" class="bg-yellow-500 text-slate-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition transform hover:scale-105 inline-block shadow-lg">View Itinerary & Prices</a>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 class="text-3xl font-bold text-blue-900 mb-6">About Leong The Explore</h2>
+    <section id="about" class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6">Lombok to Labuan Bajo Epic Sailing</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">
+            An incredible 4-day, 3-night maritime expedition starting from our official office at <strong>The Brothers Coffee & Resto (Bangsal, Pemenang, North Lombok)</strong> heading all the way to Labuan Bajo. 
+        </p>
         <p class="text-lg text-slate-600 leading-relaxed">
-            We are your premier gateway to maritime adventures in Indonesia. Specializing in sailing trips across Lombok and Labuan Bajo, we provide travelers with a seamless hybrid experience of raw tropical exploration and modern comfort. Step aboard and experience Indonesia the way it was meant to be seen.
+            Sail across breathtaking white-sand islands, swim with majestic <strong>Whale Sharks</strong> at Saleh Bay, hike the iconic Padar Island at sunset, snorkel with manta rays, and stand face-to-face with the legendary Komodo Dragons.
         </p>
     </section>
 
-    <!-- OUR FLEETS SECTION -->
-    <section id="fleets" class="bg-blue-900 text-white py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Premium Fleets</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Ship 1 -->
-                <div class="bg-blue-950 p-6 rounded-2xl border border-blue-800 shadow-xl">
-                    <h3 class="text-xl font-bold mb-3 text-yellow-400">KM Fajar Fadillah</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">Built for stability and spacious relaxation. Perfect for travelers wanting a classic Indonesian sailing atmosphere with zero compromise on safety.</p>
+    <!-- ITINERARY SECTION -->
+    <section id="itinerary" class="bg-slate-100 py-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">4D3N Sailing Itinerary</h2>
+            <p class="text-center text-slate-500 mb-12">Departure Days: Every Monday, Wednesday, and Saturday</p>
+            
+            <div class="space-y-6">
+                <!-- Day 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-sm block mb-1">Day 1</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lombok Departure & Sunset Trekking</h3>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Gather and check-in at our basecamp: <strong>The Brothers Coffee & Resto</strong> in Bangsal, Pemenang.</li>
+                        <li>3-hour scenic drive to Kayangan Harbor in East Lombok (approx. 59 miles) where our vessel awaits.</li>
+                        <li>Set sail towards <strong>Kambing Island</strong> for a light hill trek and capture a stunning island sunset.</li>
+                    </ul>
                 </div>
-                <!-- Ship 2 -->
-                <div class="bg-blue-950 p-6 rounded-2xl border border-blue-800 shadow-xl">
-                    <h3 class="text-xl font-bold mb-3 text-yellow-400">KM Khairun Nisa</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">An elegant vessel designed for intimate groups and families. Experience maximum privacy and personalized onboard services.</p>
+
+                <!-- Day 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-sm block mb-1">Day 2</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Whale Shark Phenomenon & Snorkeling</h3>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Cruise down to the majestic <strong>Saleh Bay</strong> (8-hour sail) for an unforgettable swim with wild Whale Sharks.</li>
+                        <li>Relax, swim, and enjoy pristine snorkeling waters at the beautiful <strong>Tambora Beach</strong>.</li>
+                    </ul>
                 </div>
-                <!-- Ship 3 -->
-                <div class="bg-blue-950 p-6 rounded-2xl border border-blue-800 shadow-xl">
-                    <h3 class="text-xl font-bold mb-3 text-yellow-400">KM Al-Fath</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">Our modern adventurer fleet. Equipped with excellent viewing decks to capture the stunning sunrise and sunset over the Komodo islands.</p>
+
+                <!-- Day 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-sm block mb-1">Day 3</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Komodo Dragons, Pink Beach & Padar Peak</h3>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Enter the world-famous <strong>Komodo National Park</strong> and stand face-to-face with the ancient Komodo Dragons.</li>
+                        <li>Swim and sunbathe on the unique, blush-toned sands of <strong>Pink Beach</strong>.</li>
+                        <li>Hike up the dramatic topography of <strong>Padar Island</strong> for a breathtaking panoramic sunset view.</li>
+                    </ul>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-sm block mb-1">Day 4</span>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Sea Turtles, Baby Sharks & Labuan Bajo Arrival</h3>
+                    <ul class="space-y-2 text-slate-600 list-disc list-inside">
+                        <li>Snorkel and dive with beautiful wild sea turtles at <strong>Manjarita Beach</strong>.</li>
+                        <li>Hike and spot friendly baby sharks in the crystal-clear shallow waters of <strong>Kelor Island</strong>.</li>
+                        <li>Sail to our final destination, <strong>Labuan Bajo</strong>, marking the end of our magnificent journey.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ROUTES & HYBRID BOOKING SECTION -->
-    <section id="routes" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold text-center text-blue-900 mb-4">Choose Your Adventure</h2>
-        <p class="text-center text-slate-600 mb-12 max-w-xl mx-auto">Select a route below to view details and secure your cabin instantly via our secure payment gateway.</p>
-        
-        <div class="grid md:grid-cols-2 gap-10">
-            <!-- Route 1 -->
-            <div class="bg-white rounded-3xl p-8 shadow-md border border-slate-100 flex flex-col justify-between">
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">Fair & Transparent Pricing</h2>
+        <p class="text-center text-slate-500 mb-12">Choose your cabin class below for the 4D3N adventure</p>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <!-- Deck Class -->
+            <div class="bg-white rounded-3xl p-8 shadow-md border border-slate-200 flex flex-col justify-between relative overflow-hidden">
                 <div>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
-                    <h3 class="text-2xl font-bold mt-3 mb-4 text-slate-900">Lombok to Labuan Bajo</h3>
-                    <p class="text-slate-600 mb-6 leading-relaxed">A legendary 4-day journey sailing from Lombok, stopping by beautiful volcanic islands, and ending in the magical home of the Komodo Dragons.</p>
-                </div>
-                <div>
-                    <div class="border-t border-slate-100 pt-6 mb-6">
-                        <span class="text-sm text-slate-500 block">Secure Booking</span>
-                        <span class="text-2xl font-extrabold text-blue-900">Instant Invoice</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Deck Class</h3>
+                    <p class="text-sm text-slate-500 mb-6">Perfect for solo adventurers and budget-conscious backpackers.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-blue-900">IDR 3.700.000</span>
+                        <span class="text-slate-500 text-sm block mt-1">/ person</span>
                     </div>
-                    <a href="https://mayar.id" class="block w-full text-center bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition shadow-md">Book & Pay Instantly</a>
+                    <p class="text-sm text-slate-600 bg-slate-100 p-3 rounded-xl mb-6">Shared space setup with standard comfortable mattress, pillow, and blanket per person.</p>
                 </div>
+                <a href="https://wa.me/628123456789" class="block w-full text-center bg-slate-800 text-white font-bold py-3.5 rounded-xl hover:bg-slate-900 transition shadow-md">Book Deck Space</a>
             </div>
 
-            <!-- Route 2 -->
-            <div class="bg-white rounded-3xl p-8 shadow-md border border-slate-100 flex flex-col justify-between">
+            <!-- Cabin Class -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-blue-600 flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">Most Comfortable</div>
                 <div>
-                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Full Highlights</span>
-                    <h3 class="text-2xl font-bold mt-3 mb-4 text-slate-900">Labuan Bajo Round Trip</h3>
-                    <p class="text-slate-600 mb-6 leading-relaxed">Explore Padar Island, Pink Beach, and Manta Point in a comprehensive round-trip package starting and ending in Labuan Bajo.</p>
-                </div>
-                <div>
-                    <div class="border-t border-slate-100 pt-6 mb-6">
-                        <span class="text-sm text-slate-500 block">Secure Booking</span>
-                        <span class="text-2xl font-extrabold text-blue-900">Instant Invoice</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Cabin Class (AC)</h3>
+                    <p class="text-sm text-slate-500 mb-6">Ideal for couples or friends seeking extra comfort and privacy.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-blue-900">IDR 4.800.000</span>
+                        <span class="text-slate-500 text-sm block mt-1">/ person</span>
                     </div>
-                    <a href="https://mayar.id" class="block w-full text-center bg-emerald-600 text-white font-bold py-3.5 rounded-xl hover:bg-emerald-700 transition shadow-md">Book & Pay Instantly</a>
+                    <p class="text-sm text-blue-900 bg-blue-50 p-3 rounded-xl mb-6">Private AC cabin room for 2 persons, features double mattress, pillows, fresh blankets, and personal towels.</p>
                 </div>
+                <a href="https://wa.me/628123456789" class="block w-full text-center bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition shadow-md">Book Private Cabin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS, EXCLUSIONS & BOAT FACILITIES -->
+    <section class="bg-blue-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-10">
+                
+                <!-- INCLUSIONS -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-yellow-400 flex items-center border-b border-blue-800 pb-3">What's Included</h3>
+                    <ul class="space-y-3 text-slate-200 text-sm">
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> 10 Freshly prepared meals (3 Breakfast, 4 Lunch, 3 Dinner) *Vegetarian available upon request</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Fruit platters served during breakfast</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Free-flow Coffee, Tea, and Fresh Mineral Water</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> All Entrance Fees to Komodo National Park</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Professional English-speaking tour guide</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Shuttle bus transport to departure harbor</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Connecting boat tickets from Gili T, Gili Meno, and Gili Air</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Pick-up service from: Kuta, Tetebatu, Senaru, Senggigi, Mataram, Bangsal, and Tanjung</li>
+                    </ul>
+                </div>
+
+                <!-- EXCLUSIONS -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-yellow-400 flex items-center border-b border-blue-800 pb-3">What's Excluded</h3>
+                    <ul class="space-y-3 text-slate-200 text-sm">
+                        <li class="flex items-start"><span class="text-rose-400 mr-2">✗</span> Personal Souvenirs & Expenses</li>
+                        <li class="flex items-start"><span class="text-rose-400 mr-2">✗</span> Travel Insurance</li>
+                        <li class="flex items-start"><span class="text-rose-400 mr-2">✗</span> Optional Crew Tipping</li>
+                    </ul>
+                </div>
+
+                <!-- BOAT FACILITIES -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-yellow-400 flex items-center border-b border-blue-800 pb-3">Premium Boat Facilities</h3>
+                    <ul class="space-y-3 text-slate-200 text-sm">
+                        <li class="flex items-start"><span class="text-yellow-400 mr-2">⚡</span> <strong>High-speed Starlink Wi-Fi Onboard</strong></li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Complete Safety Gear (Life jackets, life rafts, rings)</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Fresh water for showering & rinsing</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Snorkeling equipment (Mask & Snorkel, no fins)</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Multiple electronic device charging stations</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Onboard cooler boxes equipped with ice</li>
+                        <li class="flex items-start"><span class="text-emerald-400 mr-2">✓</span> Speedboat/dinghy for easy island transfers</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-sm">
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
         <p>&copy; 2026 Leong The Explore. All rights reserved. Powered by Vercel.</p>
     </footer>
 
